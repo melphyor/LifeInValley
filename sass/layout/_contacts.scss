@@ -1,0 +1,281 @@
+.contacts {
+    position: relative;
+    min-height: 900px;
+    background-color: $color-header;
+
+    .right-contact {
+        font-variant: small-caps;
+        font-size: $letterSmall;
+        transform: rotate(-90deg);
+        letter-spacing: 2px;
+        position: absolute;
+        top: 25rem;
+        right: 2.5rem;
+    }
+
+    .contact-block {
+        min-width: calc(100% - 150px);
+        height: 630px;
+        background-color: $color-sand;
+        position: absolute;
+        top: 6rem;
+        left: 0rem;
+        padding: 5rem;
+
+        h2 {
+            font-size: $letterBig;
+            font-weight: 800;
+            font-variant: small-caps;
+            color: $color-brown;
+            margin-bottom: 2rem;
+        }
+
+        .assosiates {
+            @include flexStart;         
+
+            .assosiate-1, .assosiate-2 {
+                margin-right: 4rem;
+
+                .assosiate-photo {
+                    width: 175px;
+                    height: 150px;
+                    @include bgSettings;
+                    margin-bottom: 1.75rem;
+                    box-shadow: $imgShadow;
+                }
+
+                .assosiate-name {
+                    font-size: $letterNormal;
+                    line-height: 1.5rem;
+                    color: $color-brown;
+                    font-weight: 600;
+                }
+
+                .assosiate-position {
+                    font-size: .85rem;
+                    color: $color-brown;
+                    font-weight: 400;
+                    margin-bottom: .75rem;
+                }
+
+                .assosiate-email, .assosiate-phone {
+                    font-size: .85rem;
+                    line-height: 1.5rem;
+                    color: $color-brown;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .contact-form {
+            width: 500px;
+            height: 600px;
+            background-image: url("../img/contact-form.png");
+            position: absolute;
+            top: 5rem;
+            right: 5rem;
+            box-shadow: $imgShadow;
+
+            .time-reservation {
+                font-variant: small-caps;
+                font-size: 1.5rem;
+                color: $color-shaded;
+                text-align: center;
+                margin: 6rem 0rem 2rem 0rem;
+
+                span {
+                    font-weight: 800;
+                }
+            }
+
+            .form-fields {
+                @include flexStart;
+                flex-direction: column;
+                max-width: 300px;
+                margin: auto;
+
+                input {
+                    border: none;
+                    border-bottom: 1px solid $color-shaded;
+                    background-color: transparent;
+                    margin: 1.5rem 0rem;
+                    padding: 0.5rem 0rem;
+                    color: $color-shaded;
+                }
+
+                ::placeholder {
+                    color: $color-shaded;
+                    font-weight: 400;
+                    font-size: .85;
+                }
+
+                input:focus{
+                    outline: none;   
+                }
+
+                #errorMessage {
+                    font-weight: 600;
+                    font-size: $letterSmall;
+                    color: $color-red;
+                }
+            }
+
+            .request-date {
+                width: 100px;
+                height: 40px;
+                border: none;
+                border-radius: $cornerRadius;
+                background-color: $color-green;
+                color: $color-sand;
+                font-variant: small-caps;
+                font-weight: 500;
+                font-size: .85rem;
+                letter-spacing: 1.15px;
+                margin-top: 3rem;
+                box-shadow: $imgShadow;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                border: 1px solid $color-green;;
+                border-radius: $cornerRadius;
+                background-color: transparent;
+                cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.assosiate-photo.first {
+    background-image: url("../img/Laura.jpg");
+}
+
+.assosiate-photo.second {
+    background-image: url("../img/Monika.jpg");
+}
+
+.mail-icon, .phone-icon {
+    margin-right: .5rem;
+}
+
+
+
+
+@media only all and (max-width: 1300px) {
+    .contacts { 
+        min-height: 750px;
+
+        .contact-block {
+            height: 520px;
+
+            .assosiates {     
+                .assosiate-1, .assosiate-2 {  
+                    .assosiate-photo {
+                        width: 150px;
+                        height: 125px;
+                    }
+                }
+            }
+    
+            .contact-form {
+                width: 400px;
+                height: 500px;
+
+                .time-reservation {
+                    margin: 5rem 0rem 1rem 0rem;
+                }
+    
+                .form-fields {
+                    max-width: 250px;
+    
+                    input {
+                        margin: 1.25rem 0rem;
+                    }
+                }
+    
+                .request-date {
+                    width: 100px;
+                    height: 40px;
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media only all and (max-width: 1150px) {
+    .contacts {
+        min-height: 700px;
+
+        .right-contact {
+            top: 20rem;
+            right: .5rem;
+        }
+
+        .contact-block {
+            min-width: calc(100% - 100px);
+            height: 520px;
+
+            .assosiates {     
+                .assosiate-1, .assosiate-2 { 
+                    margin-right: 2rem;
+
+                    .assosiate-photo {
+                        width: 125px;
+                        height: 100px;
+                    }
+                }
+
+                .assosiate-name {
+                    font-size: .85rem;
+                }
+
+                .assosiate-position {
+                    font-size: $letterSmall;
+                }
+
+                .assosiate-email, .assosiate-phone {
+                    font-size: $letterSmall;
+                }
+            }
+    
+            .contact-form {
+                width: 350px;
+                height: 450px;
+    
+                .form-fields {
+                    input {
+                        margin: 1rem 0rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only all and (max-width: 992px) {
+    .contacts {
+        min-height: 800px;
+    
+        .right-contact {
+            right: -2.5rem;
+        }
+    
+        .contact-block {    
+            h2 {
+                font-weight: 700;
+                margin-bottom: 0rem;
+            }
+    
+            .assosiates {
+                display: none;      
+            }
+    
+            .contact-form {
+                top: 10rem;
+            }
+        }
+    }
+}

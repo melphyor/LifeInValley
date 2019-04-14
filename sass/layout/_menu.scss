@@ -1,0 +1,47 @@
+.menu {
+    padding: 0px 7%;
+    height: 70px;
+    line-height: 70px;
+    background-color: $color-brown;
+    font-variant: small-caps;
+    @include flexBetween;
+    
+    .logo {
+        font-size: $letterBig;
+        font-weight: 600;
+        color: $color-white;
+    }
+}
+
+.navigation {
+    ul {
+        list-style: none;
+        @include flexEvenly;
+
+        li {
+            a {
+                text-decoration: none;
+                color: $color-shaded;
+                padding: 0px 1.5rem;
+                font-size: $letterNormal;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+@media only all and (max-width: 1150px) {
+    .navigation {
+        ul {    
+            li {
+                a {
+                    padding: 0px .75rem;
+                }
+            }
+        }
+    }
+}

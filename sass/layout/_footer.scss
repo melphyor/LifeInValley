@@ -1,0 +1,25 @@
+.footer {
+    padding: 0px 7%;
+    height: 70px;
+    line-height: 70px;
+    background-color: $color-darkbrown;
+    font-weight: 400;
+    font-size: .85rem;
+    color: $color-shaded;
+    @include flexBetween;
+    
+    .logo {
+        background-image: url("../img/citus-logo.png");
+        width: 63px;
+        height: 32px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .copyright {
+        span {
+            color: $color-sand;
+        }
+    }
+}

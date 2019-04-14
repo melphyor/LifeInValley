@@ -1,0 +1,165 @@
+.benefits {
+    font-variant: small-caps;
+    position: relative;
+    min-height: 900px;
+    background-color: $color-header;
+
+       .heading {
+        font-size: $letterBig;
+        font-weight: 600;
+        font-variant: small-caps;
+        color: $color-brown;
+        padding: 5rem;
+
+        span {
+            font-weight: 800;
+        }
+    }
+
+    .sliderContainer {
+        min-width: calc(100% - 10%);
+        height: 525px;
+        background-color: $color-brown;
+        float: right;
+        position: relative;
+
+        .slider {
+            @include flexStart;
+            display: none;
+
+            .benefit {
+                font-size: $letterSmall;
+                transform: rotate(-90deg);
+                letter-spacing: 2px;
+                position: absolute;
+                top: 16rem;
+                left: -5rem;
+            } 
+
+            .image {
+                @include bgSettings;
+                width: 410px;
+                height: 550px;
+                position: relative;
+                top: 4.5rem;
+                left: 6rem;
+                box-shadow: $imgShadow;
+            }
+
+            .text {
+                color: $color-shaded;
+                width: 400px;
+                position: absolute;
+                top: 7rem;
+                right: 10rem;
+
+                h2 {
+                    font-size: $letterBig;
+                    line-height: 2.15rem;
+                    font-weight: 600;
+                    margin-bottom: 1.5rem;
+                    span {
+                        font-weight: 800;
+                    }
+                }
+
+                p {
+                font-variant: normal;
+                font-size: $letterNormal;
+                line-height: 26px;
+                margin-bottom: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+.music {
+    width: 150px;
+    height: 45px;
+    background-color: $color-brown;
+    border: 1px solid $color-shaded;
+    border-radius: $cornerRadius;
+    flex-direction: row;
+    font-size: 1rem;
+    color: $color-shaded;
+    font-variant: small-caps;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: $color-shaded;
+        color: $color-brown;
+        cursor: pointer;
+    }
+
+    span {
+        padding-left: 0.5rem;
+    }
+}
+
+
+@media only all and (max-width: 1300px) {
+    .benefits {
+        .sliderContainer {
+            .slider {
+                .image {
+                    width: 372px;
+                    height: 500PX
+                }
+    
+                .text {
+                    width: 350px;
+                }
+            }
+        }
+    }
+}
+
+@media only all and (max-width: 1150px) {
+    .benefits {
+        .sliderContainer {
+            .slider {
+                .image {
+                    width: 315px;
+                    height: 423px;
+                    top: 9rem;
+                }
+    
+                .text {
+                    right: 3rem;
+    
+                    h2 {
+                        font-size: $letterBig;
+                        line-height: 2.15rem;
+                        font-weight: 600;
+                        margin-bottom: 1.5rem;
+                        span {
+                            font-weight: 800;
+                        }
+                    }
+    
+                    p {
+                    font-size: .85rem;
+                    line-height: 26px;
+                    margin-bottom: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only all and (max-width: 992px) {
+    .benefits {    
+        .sliderContainer {
+            .slider {    
+                .image {
+                    display: none
+                }
+            }
+        }
+    }
+}
+
+

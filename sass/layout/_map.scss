@@ -1,0 +1,75 @@
+.map {
+    font-variant: small-caps;
+    position: relative;
+    min-height: 900px;
+    background-color: $color-sand;
+
+    .map-heading {
+        font-size: $letterBig;
+        font-weight: 600;
+        font-variant: small-caps;
+        color: $color-brown;
+        padding: 5rem;
+
+        span {
+            font-weight: 800;
+        }
+    } 
+
+    .map-block {
+        @include flexStart;
+        justify-content: center;
+    
+        .location {
+            background-color: $color-header;
+            width: 448px;
+            height: 600px;
+            box-shadow: $imgShadow;
+            z-index: 10;
+        }
+
+        .map-points {
+            background-image: url("../img/marked-map.png");
+            @include bgSettings;
+            width: 700px;
+            box-shadow: $imgShadow;
+        }
+    }
+}
+
+@media only all and (max-width: 1300px) {
+    .map {
+        .map-block {        
+            .location {
+                width: 420px;
+                height: 600px;
+            }
+    
+            .map-points {
+                width: 600px;
+            }
+        }
+    }
+}
+
+@media only all and (max-width: 1150px) {
+    .map {
+        .map-block { 
+            .map-points {
+                width: 525px;
+            }
+        }
+    }
+}
+
+
+@media only all and (max-width: 992px) {
+    .map {
+        .map-block { 
+            .map-points {
+                display: none;
+            }
+        }
+    }
+}
+

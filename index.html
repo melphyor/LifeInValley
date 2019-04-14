@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gyvenimas Slėnyje</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- MENU SECTION -->
+        <header class="menu">
+            <div class="logo">LOGO</div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#">kotedžai</a></li>
+                    <li><a href="#">gyvenimas slėnyje</a></li>
+                    <li><a href="#">galerija</a></li>
+                    <li><a href="#">gyventojams</a></li>
+                    <li><a href="#">naujienos</a></li>
+                    <li><a href="#">kontaktai</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- BENEFITS SECTION -->
+        <section class="benefits">
+            <div class="heading">
+                <h1>
+                    gyvenimas <span>slėnyje</span>
+                </h1>
+            </div>
+
+            <div class="sliderContainer">
+                <div class="slider fade">
+                    <div class="benefit">privalumas nr. 1</div>
+                    <div class="image one"></div>
+                    <div class="text">
+                        <h2>netoliese - <br><span>gilužio ežeras</span></h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie erat vitae odio auctor luctus ac id lorem. Aliquam aliquam massa et magna suscipit, eu vehicula dui sollicitudin. Phasellus rhoncus, nulla at molestie vulputate, risus libero maximus nisl, venenatis aliquet urna ligula sed nisi. Vestibulum id ante dolor. Donec bibendum sem ullamcorper enim dignissim ullamcorper.
+                        </p>
+                        <button class="music">
+                            <i class="fab fa-itunes-note"></i> <span>klausyti</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="slider fade">
+                    <div class="benefit">privalumas nr. 2</div>
+                    <div class="image two"></div>
+                    <div class="text">
+                        <h2>visai šalia - <br><span>Salotės ežeras</span></h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie erat vitae odio auctor luctus ac id lorem.
+                        </p>
+                        <button class="music">
+                            <i class="fab fa-itunes-note"></i> <span>klausyti</span>
+                        </button>
+                    </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+
+        <!-- MAPS SECTION -->
+        <section class="map">
+            <div class="map-heading">
+                <h1>
+                    vieta <span>mieste</span>
+                </h1>
+            </div>
+
+            <div class="map-block">
+                <div class="location">
+                    <div class="tab">
+                        <button class="tablinks" onclick="openTab(event, 'shop')" id="defaultOpen"><i class="fas fa-shopping-cart"></i></button>
+                        <button class="tablinks" onclick="openTab(event, 'lib')"><i class="fas fa-book"></i></button>
+                        <button class="tablinks" onclick="openTab(event, 'med')"><i class="fas fa-briefcase-medical"></i></button>
+                        <button class="tablinks" onclick="openTab(event, 'work')"><i class="fas fa-briefcase"></i></button>
+                        <button class="tablinks" onclick="openTab(event, 'gym')"><i class="fas fa-dumbbell"></i></button>
+                        <button class="tablinks" onclick="openTab(event, 'bank')"><i class="fas fa-money-check"></i></button>
+                        <button class="tablinks" onclick="openTab(event, 'other')"><i class="fas fa-retweet"></i></button>
+                    </div>
+
+                    <div id="shop" class="tabcontent">
+                        <div class="contentHeading">
+                            <h3>parduotuvės</h3>
+                        </div>
+                        <div class="contentinfo">
+                            <p class="place">Parduotuvė "RIMI"</p>
+                            <p class="distance">300</p>
+                        </div>
+                        <div class="contentinfo">
+                            <p class="place">Parduotuvė "IKI"</p>
+                            <p class="distance">100</p>
+                        </div>
+                        <div class="contentinfo">
+                            <p class="place">Parduotuvė "MAXIMA"</p>
+                            <p class="distance">200</p>
+                        </div>
+                        <div class="contentinfo">
+                            <p class="place">Parduotuvė "Bravo Alco"</p>
+                            <p class="distance">500</p>
+                        </div>
+                    </div>
+
+                    <div id="lib" class="tabcontent">
+                        <div class="contentHeading">
+                            <h3>švietimo ir mokslo institucijos</h3>
+                        </div>
+                        <div class="contentinfo">
+                            <p class="place">Martyno Mažvydo progimnasija</p>
+                            <p class="distance">900</p>
+                        </div>
+                        <div class="contentinfo">
+                            <p class="place">Vilniaus Pilaitės gimnazija</p>
+                            <p class="distance">1000</p>
+                        </div>
+                    </div>
+
+                    <div id="med" class="tabcontent">
+                        <div class="contentHeading">
+                            <h3>vaistinės ir gydymo įstaigos</h3>
+                        </div>
+                        <div class="contentinfo">
+                            <p class="place">Poliklinika</p>
+                            <p class="distance">900</p>
+                        </div>
+                        <div class="contentinfo">
+                            <p class="place">Vaistinė "Pilanta"</p>
+                            <p class="distance">600</p>
+                        </div>
+                        <div class="contentinfo">
+                            <p class="place">Šeimos sveikatos namai "Gyda"</p>
+                            <p class="distance">750</p>
+                        </div>
+                        <div class="contentinfo">
+                            <p class="place">Marijos vaistinė</p>
+                            <p class="distance">1200</p>
+                        </div>
+                        <div class="contentinfo">
+                            <p class="place">Eurovaistinė (prekybos centre "Pupa")</p>
+                            <p class="distance">800</p>
+                        </div>
+                        <div class="contentinfo">
+                            <p class="place">B. Kiselienės sveikatingumo studija</p>
+                            <p class="distance">1200</p>
+                        </div>
+                    </div>
+
+                    <div id="work" class="tabcontent">
+                        <div class="contentHeading">
+                            <h3>pavaldžios įstaigos</h3>
+                        </div>
+                        <div class="contentinfo">
+                            <p class="place">...</p>
+                            <p class="distance">0</p>
+                        </div>
+                        <div class="contentinfo">
+                            <p class="place">...</p>
+                            <p class="distance">0</p>
+                        </div>
+                    </div>
+
+                    <div id="gym" class="tabcontent">
+                        <div class="contentHeading">
+                           <h3>sporto klubai</h3> 
+                        </div>
+                        <div class="contentinfo">
+                            <p class="place">Lemon Gym</p>
+                            <p>400</p>
+                        </div>
+                        <div class="contentinfo">
+                            <p class="place">Goodlife</p>
+                            <p>300</p>
+                        </div>
+                    </div>
+
+                    <div id="bank" class="tabcontent">
+                        <div class="contentHeading">
+                            <h3>bankai</h3>
+                        </div>
+                        <div class="contentinfo">
+                            <p class="place">...</p>
+                            <p class="distance">0</p>
+                        </div>
+                        <div class="contentinfo">
+                            <p class="place">...</p>
+                            <p class="distance">0</p>
+                        </div>
+                    </div>
+
+                    <div id="other" class="tabcontent">
+                        <div class="contentHeading">
+                            <h3>kitos įstaigos</h3>  
+                        </div>
+                        <div class="contentinfo">
+                            <p class="place">...</p>
+                            <p class="distance">0</p>
+                        </div>
+                        <div class="contentinfo">
+                            <p class="place">...</p>
+                            <p class="distance">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-points"></div>
+            </div>
+        </section>
+
+        <!-- PRESENTATION SECTION -->
+        <section class="presentation">
+            <div class="extern-logo">
+                <img src="img/logo-1.png" alt="logo" class="other-logo">
+                <img src="img/logo-2.png" alt="logo" class="other-logo second">
+                <img src="img/logo-3.png" alt="logo" class="other-logo">
+            </div>
+
+            <div class="presentation-slider">
+                <div class="presentation-logo">
+                    <img src="./img/citus4.png" alt="logo">
+                </div>
+                <div class="presentation-heading">
+                    Nekilnojamojo turto vystytojas
+                </div>
+                <div class="presentation-text">
+                    <div>Bendradarbiaujame su Lietuvos nekilnojamojo turto plėtros asociacija,</div>
+                    <div>Nacionaline pasuvaus namo asociacija,</div>
+                    <div>Kultūros paveldo departamentu ir Certified Passive House institute Vokietijoje.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTS SECTION -->
+        <section class="contacts">
+            <div class="right-contact">
+                susisiekite loremipsum 
+            </div>
+            <div class="contact-block">
+                <h2>
+                    kontaktai
+                </h2>
+                <div class="assosiates">
+                    <div class="assosiate-1">
+                        <div class="assosiate-photo first"></div>
+                        <p class="assosiate-name">Laura Žvaliauskaitė</p>
+                        <p class="assosiate-position">Pardavimų vadybininkė</p>
+                        <p class="assosiate-email">
+                            <i class="fas fa-envelope mail-icon"></i>
+                            laura@cc.lt   
+                        </p>
+                        <p class="assosiate-phone">
+                            <i class="fas fa-phone phone-icon"></i>
+                            +370 655 56408
+                        </p>
+                    </div>
+
+                    <div class="assosiate-2">
+                        <div class="assosiate-photo second"></div>
+                        <p class="assosiate-name">Monika Kuzminskaitė</p>
+                        <p class="assosiate-position">Pardavimų vadybininkė</p>
+                        <p class="assosiate-email">
+                            <i class="fas fa-envelope mail-icon"></i>
+                            monika@cc.lt   
+                        </p>
+                        <p class="assosiate-phone">
+                            <i class="fas fa-phone phone-icon"></i>
+                            +370 682 02272
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <p class="time-reservation">
+                        <span>laiko</span>
+                        rezervacija susitikimui
+                    </p>
+                    <form action="/action_page.php" method="POST" class="form-fields" autocomplete="off">
+                        <input type="email"  name="email" placeholder="El. paštas" autocomplete="off" required  id="txtEmail">
+                        <input type="tel" name="phone" placeholder="Telefonas" autocomplete="off" required id="phoneNum"
+                        pattern='^8\d{8}$'>
+                        <input type="text" name="date" placeholder="Rezervuoju laiką susitikimui x d. x val." autocomplete="off" required>
+                        <div id="errorMessage"></div>
+                        <button class="request-date" onclick='formValidation();'>
+                            siųsti
+                        </button>
+                    </form>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER SECTION -->
+        <footer class="footer">
+            <div class="logo"></div>
+            <div class="copyright">
+                &copy; 2016. Visos teisės saugomos &#124;
+                e-solution: <span>Gaumina</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src='./js/script.js'></script>
+</body>
+</html>

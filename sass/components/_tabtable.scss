@@ -1,0 +1,81 @@
+.location {
+
+    .tab {
+        overflow: hidden;
+        border: none;
+        background-color: $color-brown;
+
+        .tablinks {
+            width: 64px;
+            height: 64px;
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            color: $color-header;
+            font-size: 15px;
+
+            &:hover {
+                background-color: $color-green;
+            }
+        }
+
+        .tablinks.active {
+            background-color: $color-green;
+        }
+    }
+
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        margin: 0 60px;
+        border: none;
+        border-top: none;
+        animation: fadeEffect 1s;
+
+        .contentHeading {
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: $color-lightbrown;
+            padding: 60px 0 20px;
+        }
+
+        .contentinfo {
+            @include flexBetween;
+            border-bottom: 1px solid rgba(112, 110, 106, 0.3);
+            padding: 1rem 0;
+            font-variant: normal;
+            
+            .place {
+                font-size: .95rem;
+                font-weight: 400;
+                color: $color-lightbrown;
+            }
+
+            .distance {
+                font-size: .95rem;
+                font-weight: 700;
+                color: $color-lightbrown;
+            }
+        }
+    }
+
+    @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+}
+
+@media only all and (max-width: 1300px) {
+    .location {
+        .tab {    
+            .tablinks {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.presentation {
+    background-image:
+    linear-gradient(
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)
+    ),
+    url('../img/vilnius.jpg');
+    @include bgSettings;
+    width: 100%;
+    height: 800px;
+    font-weight: 400;
+    color: $color-presentation;
+    font-size: $letterNormal;
+    line-height: 2rem;
+
+        .extern-logo {
+        text-align: right;
+
+        .other-logo {
+            width: 70px;
+            margin: .75rem;
+        }
+
+        .other-logo.second {
+            width: 120px;
+        }
+    }
+
+    .presentation-slider {
+        width: 600px;
+        @include flexBetween;
+        text-align: center;
+        flex-direction: column;
+        margin: auto;
+        position: relative;
+        top: 40%;
+        transform: translateY(-50%);
+
+        .presentation-logo {
+            img {
+                width: 120px;
+            }
+        }
+
+        .presentation-heading {
+            font-size: $letterBig;
+            line-height: 5rem;
+        }
+    }
+}
+
+
+@media only all and (max-width: 1150px) {
+    .presentation {
+        height: 600px;
+        font-size: .85rem;
+        line-height: 2rem;
+    
+            .extern-logo {    
+            .other-logo {
+                width: 60px;
+                margin: .5rem;
+            }
+    
+            .other-logo.second {
+                width: 100px;
+            }
+        }
+    
+        .presentation-slider {    
+            .presentation-logo {
+                img {
+                    width: 100px;
+                }
+            }
+    
+            .presentation-heading {
+                font-size: 1.75rem;
+            }
+        }
+    }
+}
+
+@media only all and (max-width: 992px) {
+    .presentation {
+        height: 100vh;
+        font-size: .85rem;
+        line-height: 1.5rem;
+    
+            .extern-logo {    
+            .other-logo {
+                width: 50px;
+                margin: .5rem;
+            }
+    
+            .other-logo.second {
+                width: 80px;
+            }
+        }
+    
+        .presentation-slider {
+            width: 450px;
+   
+            .presentation-logo {
+                img {
+                    width: 80px;
+                }
+            }
+    
+            .presentation-heading {
+                font-size: 1.5rem;
+                line-height: 4rem;
+            }
+        }
+    }
+}
+
+

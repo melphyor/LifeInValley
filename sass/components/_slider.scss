@@ -1,0 +1,51 @@
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    left: -4rem;
+    width: 45px;
+    height: 45px;
+    border: 1px solid white;
+    border-radius: $cornerRadius;
+    text-align: center;
+    background-color: #fff;
+    color: $color-brown;
+    font-size: $letterBig;
+    line-height: 45px;
+    transition: .6s ease;
+    user-select: none;
+}
+
+.next {
+    left: -1rem;
+}
+
+.prev:hover, .next:hover {
+    border: 1px solid $color-sand;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.image.one {
+    background-image: url("../img/vaikai.png");
+}
+
+.image.two {
+    background-image: url("../img/ezeras.jpg");
+}
